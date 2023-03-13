@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#188de7">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <title>Boxrent</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="container navbar">
+            <a href="#">
+            <img class="logo-img" src="assets/img/icon.svg" alt="logo">
+        </a>
+            <div class="block">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#who">Кто мы?</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#why">почему мы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#stages">Этапы работы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#investing">Инвестирование</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contscts">контакты</a></li>
+                    <a href="markup.html" class="markup-link">markup</a>
+                </ul>
+            </div>
+            <div class="phone">+371 20-440-882</div>
+        </nav>
+    </header>
+    <main class="wrapper home">
+        <div class="first-screen" id="home">
+            <div class="container">
+                <h1 class="first-screen-title">Инвестируйте в контейнеры от 5 000 € с возвратом 15-17% в год</h1>
+                <div class="first-screen-items">
+                    <div class="first-screen-item">
+                        <div class="first-screen-item-img icon-one"></div>
+                        <div class="first-screen-item-description">Физический контейнер в Вашей собственности</div>
+                    </div>
+                    <div class="first-screen-item">
+                        <div class="first-screen-item-img icon-two"></div>
+                        <div class="first-screen-item-description">Инвестируйте в компанию которая имеет 200+ активных арендаторов и управляет активами в размере 300 000 € +</div>
+                    </div>
+                    <div class="first-screen-item">
+                        <div class="first-screen-item-img icon-three"></div>
+                        <div class="first-screen-item-description">Средняя заполняемость складов выше 85%*</div>
+                    </div>
+                </div>
+                <button class="btn btn-primary">Получить коммерческое предложение</button>
+            </div>
+        </div>
+
+        <div class="profit">
+            <div class="container">
+                <h2 class="profit-title">Рассчитайте свою прибыль!</h2>
+                <div class="row">
+                    <div class="profit-block">
+                        <h3 class="profit-block-title">Ваша инвестиция</h3>
+                        <form class="range">
+                            <div class="text"><output id="range_invest_disp">10 000</output><span>€</span></div>
+                            <input type="range" name="invest" id="range_invest" value="10000" min="5000" max="50000" oninput="range_invest_disp.value = range_invest.value">
+                        </form>
+                        <div class="profit-block-range-text">
+                            <span>5 000 €</span>
+                            <span>50 000 €+</span>
+                        </div>
+                    </div>
+                    <div class="profit-block">
+                        <h3 class="profit-block-title">В вашей собственности</h3>
+                        <form class="range">
+                            <div class="text"><output id="range_property_disp">2</output><span>контейнера</span></div>
+                            <input type="range" name="property" id="range_property" value="2" min="1" max="10" oninput="range_property_disp.value = range_property.value">
+                        </form>
+                        <div class="profit-block-range-text">
+                            <span>1 конт.</span>
+                            <span>10 конт. +</span>
+                        </div>
+                    </div>
+                    <div class="profit-block">
+                        <h3 class="profit-block-title question">Ваш возврат</h3>
+                        <form class="range">
+                            <div class="text"><output id="range_return_disp">15.2</output><span>%</span></div>
+                            <input type="range" name="return" id="range_return" value="15.2" min="15" max="17" step="0.1" oninput="range_return_disp.value = range_return.value">
+                        </form>
+                        <div class="profit-block-range-text">
+                            <span>15%</span>
+                            <span>17%</span>
+                        </div>
+                    </div>
+                    <div class="profit-block-results">
+                        <h3 class="profit-block-results-title">Ваш пассивный доход</h3>
+                        <div class="profit-block-results-item">
+                            <span class="span-one">В месяц:</span>
+                            <span>129 €</span>
+                        </div>
+                        <div class="profit-block-results-item">
+                            <span class="span-three">В год:</span>
+                            <span>1 550 €</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="we-are-doing" id="who">
+            <div class="container">
+                <img class="we-are-doing-img" src="assets/img/we-are-diong-img.svg" alt="we are doing">
+                <div class="we-are-doing-info">
+                    <h2 class="we-are-doing-info-title">Чем занимается Boxrent ?</h2>
+                    <ul class="we-are-doing-info-items">
+                        <li class="we-are-doing-info-item">Мы управляющая компания. Мы строим склады из морских контейнеров и сдаем в короткий и долгий срок.</li>
+                        <li class="we-are-doing-info-item">Мы открыли первую локацию в Риге 06.2020 и за 2 года вырасли до одной из лидирующих компаний в Балтии по хранению вещей в контейнерах.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="dynamics">
+            <div class="container">
+                <h2 class="dynamics-title">Динамика развития</h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="dynamics-block">
+                            <div class="dynamics-block-img icon-one"></div>
+                            <div class="dynamics-block-info">
+                                <div class="dynamics-block-info-date">05. 2020</div>
+                                <ul class="dynamics-block-info-items">
+                                    <li class="dynamics-block-info-item">1 контейнер</li>
+                                    <li class="dynamics-block-info-item">6 клиентов</li>
+                                </ul>
+                                <div class="dynamics-block-info-coordinates">Рига</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="dynamics-block">
+                            <div class="dynamics-block-img icon-two"></div>
+                            <div class="dynamics-block-info">
+                                <div class="dynamics-block-info-date">05. 2021</div>
+                                <ul class="dynamics-block-info-items">
+                                    <li class="dynamics-block-info-item">20 контейнер</li>
+                                    <li class="dynamics-block-info-item">90 клиентов</li>
+                                </ul>
+                                <div class="dynamics-block-info-coordinates">Рига</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="dynamics-block">
+                            <div class="dynamics-block-img icon-three"></div>
+                            <div class="dynamics-block-info">
+                                <div class="dynamics-block-info-date">04. 2022</div>
+                                <ul class="dynamics-block-info-items">
+                                    <li class="dynamics-block-info-item">58 контейнеров</li>
+                                    <li class="dynamics-block-info-item">200+ клиентов</li>
+                                </ul>
+                                <div class="dynamics-block-info-coordinates">Рига | Вильнюс</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="dynamics-block next">
+                            <div class="dynamics-block-img icon-four"></div>
+                            <div class="dynamics-block-info">
+                                <div class="dynamics-block-info-date next">05. 2023</div>
+                                <ul class="dynamics-block-info-items next">
+                                    <li class="dynamics-block-info-item next">200 контейнер</li>
+                                    <li class="dynamics-block-info-item next">1000 клиентов</li>
+                                </ul>
+                                <div class="dynamics-block-info-coordinates next">Рига | Вильню | Каунас | Таплин</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="location">
+            <div class="container">
+                <h3 class="location-title">Наши контейнеры расположены в 8 разных локаций</h3>
+                <div class="location-maps">
+                    <div class="location-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65714.01804995969!2d24.094591038115635!3d56.954382157139904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfb0e5073ded%3A0x400cfcd68f2fe30!2z0KDQuNCz0LAsINCb0LDRgtCy0LjRjw!5e0!3m2!1sru!2sua!4v1667149209722!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="location-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83427.01846908272!2d25.254113969256554!3d54.69295793068808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd93fb5c6408f5%3A0x400d18c70e9dc40!2z0JLQuNC70YzQvdGO0YEsINCb0LjRgtCy0LA!5e0!3m2!1sru!2sua!4v1667149271660!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="why-are-we" id="why">
+            <div class="container">
+                <h2 class="why-are-we-title">Почему нас выбрали уже более 200 клиентов?</h2>
+                <div class="why-are-we-block">
+                    <div class="why-are-we-block-items">
+                        <div class="why-are-we-block-item">
+                            <div class="why-are-we-block-item-img hermetically"></div>
+                            <div class="why-are-we-block-item-description">Сухо и герметично</div>
+                        </div>
+                        <div class="why-are-we-block-item">
+                            <div class="why-are-we-block-item-img сomfortable"></div>
+                            <div class="why-are-we-block-item-description">Удобный подьезд</div>
+                        </div>
+                        <div class="why-are-we-block-item">
+                            <div class="why-are-we-block-item-img lighting"></div>
+                            <div class="why-are-we-block-item-description lighting">Электричество и освещение</div>
+                        </div>
+                        <div class="why-are-we-block-item">
+                            <div class="why-are-we-block-item-img profitable"></div>
+                            <div class="why-are-we-block-item-description">Выгодно</div>
+                        </div>
+                    </div>
+                    <div class="why-are-we-block-img">
+                        <img src="assets/img/why-are-we-img.png" alt="why are we">
+            </div>
+                        <div class="why-are-we-block-items">
+                            <div class="why-are-we-block-item">
+                                <div class="why-are-we-block-item-description safely">Безопасно</div>
+                                <div class="why-are-we-block-item-img safely"></div>
+                            </div>
+                            <div class="why-are-we-block-item">
+                                <div class="why-are-we-block-item-description access">Доступ 24/7</div>
+                                <div class="why-are-we-block-item-img access"></div>
+                            </div>
+                            <div class="why-are-we-block-item">
+                                <div class="why-are-we-block-item-description security">Видеонаблюдение и физическая охрана</div>
+                                <div class="why-are-we-block-item-img security"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="characteristics">
+                <div class="container">
+                    <h2 class="characteristics-title">Контейнер <b>Boxrent</b> - отличное решение для хранения вещей</h2>
+                    <div class="characteristics-popovers">
+                        <a tabindex="0" class="btn popovers popover-one" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title data-bs-content="Вентиляция">
+                <span></span>
+                <span></span>
+            </a>
+                        <a tabindex="0" class="btn popovers popover-two" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title data-bs-content="Безопасно">
+                <span></span>
+                <span></span>
+            </a>
+                        <a tabindex="0" class="btn popovers popover-three" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title data-bs-content="Электричество и освещение ">
+                <span></span>
+                <span></span>
+            </a>
+                        <a tabindex="0" class="btn popovers popover-four" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title data-bs-content="Видеонаблюдение">
+                <span></span>
+                <span></span>
+            </a>
+                        <a tabindex="0" class="btn popovers popover-five" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title data-bs-content="Сухо и герметично">
+                <span></span>
+                <span></span>
+            </a>
+                        <a tabindex="0" class="btn popovers popover-six" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title data-bs-content="Доступно">
+                <span></span>
+                <span></span>
+            </a>
+                    </div>
+                    <img class="characteristics-img" src="assets/img/characteristics-img.svg" alt="Boxrent">
+    </div>
+                </div>
+                <div class="how-we-working" id="stages">
+                    <div class="container">
+                        <h2 class="how-we-working-title">Как мы работаем?</h2>
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="how-we-working-block">
+                                    <div class="how-we-working-block-text step">ШАГ №1</div>
+                                    <div class="how-we-working-block-img icon-one"></div>
+                                    <h6 class="how-we-working-block-title">Анализ рынка и тестирование спроса</h6>
+                                    <div class="how-we-working-block-description question-step-one">Перед открытием новой локации, мы ее тщательно анализируем, а также тестируем реальный спрос</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="how-we-working-block">
+                                    <div class="how-we-working-block-text step">ШАГ №2</div>
+                                    <div class="how-we-working-block-img icon-two"></div>
+                                    <h6 class="how-we-working-block-title">Поиск территории</h6>
+                                    <div class="how-we-working-block-description question-step-two">Мы ищем землю в выбранных районах и заключаем долгосрочный договор аренды от ≈ 2 до 5 лет</div>
+                                    <div class="how-we-working-block-other">У вас есть территория?</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="how-we-working-block">
+                                    <div class="how-we-working-block-text step">ШАГ №3</div>
+                                    <div class="how-we-working-block-img icon-three"></div>
+                                    <h6 class="how-we-working-block-title">Предложение инвесторам</h6>
+                                    <div class="how-we-working-block-description">Рассылаем актуальное предложение инвесторам по входу в новую локацию</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="how-we-working-block">
+                                    <div class="how-we-working-block-text step">ШАГ №4</div>
+                                    <div class="how-we-working-block-img icon-four"></div>
+                                    <h6 class="how-we-working-block-title">Производство складов</h6>
+                                    <div class="how-we-working-block-description">Изготовления дверей, поставка и переоборудования контейнеров как правило занимает до 30 дней</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="how-we-working-block">
+                                    <div class="how-we-working-block-text">ШАГ №5</div>
+                                    <div class="how-we-working-block-img icon-five"></div>
+                                    <h6 class="how-we-working-block-title">Маркетинг</h6>
+                                    <div class="how-we-working-block-description">Паралельно производству начинаем рекламировать новую локацию. Мы используем все возможные ресурсы для привлечения новых клиентов</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="how-we-working-block">
+                                    <div class="how-we-working-block-text step">ШАГ №6</div>
+                                    <div class="how-we-working-block-img icon-six"></div>
+                                    <h6 class="how-we-working-block-title">Заполнения новых контейнеров</h6>
+                                    <div class="how-we-working-block-description">В зависимости от количеств контейнеров, в среднем первую группу контейнеров заполняем до 75% за 45 дней </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="how-we-working-block">
+                                    <div class="how-we-working-block-text step">ШАГ №7</div>
+                                    <div class="how-we-working-block-img icon-seven"></div>
+                                    <h6 class="how-we-working-block-title">Выплата процентов инвесторам</h6>
+                                    <div class="how-we-working-block-description question-step-seven">Инвестор начинает получать проценты уже за второй месяц работы вне зависимости от заполняемости наших контейнеров!</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="how-we-working-block">
+                                    <div class="how-we-working-block-text">ШАГ №8</div>
+                                    <div class="how-we-working-block-img icon-eigxt"></div>
+                                    <h6 class="how-we-working-block-title">Строительство новых складов</h6>
+                                    <div class="how-we-working-block-description">Как только локация заполняется до 75%, высылаем предложение инвесторам и строим новые склады</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="investing" id="investing">
+                    <div class="container">
+                        <h2 class="investing-title">Как происходит инвестирование?</h2>
+                        <div class="investing-block">
+                            <div class="investing-block-item">
+                                <img class="investing-block-item-img" src="assets/img/investing-img.png" alt="img">
+                                <div class="investing-block-item-description">Процентная ставка считается от общего количества контейнеров у одного инвестора.</div>
+                                <div class="investing-block-item-example">
+                                    <div class="investing-block-item-example-title">Например</div>
+                                    <div class="investing-block-item-example-description">Купив 1 контейнер, возврат = 15%, через год ещё докупив 1 контейнер, возврат нового контейнера = 15,5%, через ещё 2 года докупив 2 контейнера, возврат 16% </div>
+                                </div>
+                            </div>
+                            <div class="investing-block-item">
+                                <ol class="investing-block-item-list">
+                                    <li class="investing-block-item-list-item">После одобрения число контейнеров и локации, по вашему желанию, мы присылаем фото контейнеров</li>
+                                    <li class="investing-block-item-list-item">Мы заключаем договор купли-продажи контейнера и сразу же договор долгосрочной аренды, и Вы перечисляете средства</li>
+                                    <li class="investing-block-item-list-item">Вы получаете первую прибыль <b>уже за второй месяц работы</b> вне зависимости от заполняемости</li>
+                                </ol>
+                                <div class="investing-block-item-table">
+                                    <div class="investing-block-item-table-colomn">
+                                        <h6 class="investing-block-item-table-colomn-title">Кол. контейнеров</h6>
+                                        <div class="investing-block-item-table-colomn-description">1</div>
+                                        <div class="investing-block-item-table-colomn-description">2-3</div>
+                                        <div class="investing-block-item-table-colomn-description">4-5</div>
+                                        <div class="investing-block-item-table-colomn-description">6-9</div>
+                                        <div class="investing-block-item-table-colomn-description">10+</div>
+                                    </div>
+                                    <div class="investing-block-item-table-colomn">
+                                        <h6 class="investing-block-item-table-colomn-title">Возврат в год</h6>
+                                        <div class="investing-block-item-table-colomn-description">15%</div>
+                                        <div class="investing-block-item-table-colomn-description">15,5%</div>
+                                        <div class="investing-block-item-table-colomn-description">16%</div>
+                                        <div class="investing-block-item-table-colomn-description">16,5%</div>
+                                        <div class="investing-block-item-table-colomn-description">17%</div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary">Получить коммерческое предложение</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="liquid-asset">
+                    <div class="container">
+                        <h2 class="liquid-asset-title">У вас в собственности <b>ликвидный актив</b></h2>
+                        <div class="row">
+                            <div class="liquid-asset-block">
+                                <div class="liquid-asset-block-item">
+                                    <div class="liquid-asset-block-item-img icon-one"></div>
+                                    <h6 class="liquid-asset-block-item-title">Каждый контейнер имеет свой ID</h6>
+                                </div>
+                                <div class="liquid-asset-block-description">У каждого контейнера внутри и снаруже свой уникальный ID. В договоре купли-продажи мы вписываем этот номер.</div>
+                            </div>
+                            <div class="liquid-asset-block">
+                                <div class="liquid-asset-block-item">
+                                    <div class="liquid-asset-block-item-img icon-two"></div>
+                                    <h6 class="liquid-asset-block-item-title">Можно продать</h6>
+                                </div>
+                                <div class="liquid-asset-block-description">Если у Вас поменялись планы, Вы можете предложить выкупить контейнер у нас. Мы предложим выкуп другим инвесторам или рассмотрим покупку сами.</div>
+                            </div>
+                            <div class="liquid-asset-block">
+                                <div class="liquid-asset-block-item">
+                                    <div class="liquid-asset-block-item-img icon-three"></div>
+                                    <h6 class="liquid-asset-block-item-title">Вы знаете точное расположение контейнера</h6>
+                                </div>
+                                <div class="liquid-asset-block-description">Мы ставим контейнер на территорию которой адрес указан в договоре аренды между нами и вами. Мы не меняем эту локацию и у Вас есть доступ к этой территории.</div>
+                            </div>
+                            <div class="liquid-asset-block">
+                                <div class="liquid-asset-block-item">
+                                    <div class="liquid-asset-block-item-img icon-four"></div>
+                                    <h6 class="liquid-asset-block-item-title">Видеонаблюдения на территории</h6>
+                                </div>
+                                <div class="liquid-asset-block-description">Мы оснащаем наши склады 24/7 видеонаблюдением. Мы вам даем доступ к камерам углы которых попадают ваши контейнеры</div>
+                            </div>
+                            <img class="liquid-asset-photo" src="assets/img/liquid-asset-photo.png" alt="photo"></img>
+                            <div class="liquid-asset-block">
+                                <div class="liquid-asset-block-item">
+                                    <div class="liquid-asset-block-item-img icon-five"></div>
+                                    <h6 class="liquid-asset-block-item-title">Высокий спрос на контейнеры</h6>
+                                </div>
+                                <div class="liquid-asset-block-description">Активно развивается контейнерское строительство. Порочные конструкции контейнера переделывают в дома, офисы, торговые точки и склады</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <maim class="pension">
+                    <div class="container">
+                        <h2 class="pension-title">Пожизненная пенсия</h2>
+                        <div class="pension-description">Получайте поссивный доход всю жизнь, потому-что:</div>
+                        <div class="row">
+                            <div class="pension-block">
+                                <span>Мы работаем в антикризисной сфере</span>
+                            </div>
+                            <div class="pension-block">
+                                <span>Производители контейнеров гарантирует срок службы контейнера 50 лет. Это в суровых условиях в море где есть соль, вода и постоянные разгрузки.</span>
+                                <span>К тому же по статистике в среднем из всех складов самообслуживани, те у кого заполняемость ниже 50%, всего 4%</span>
+                            </div>
+                            <div class="pension-block">
+                                <span>Наша точка безубыточности по отношению к заполняемости низка - у нас не большие затраты.</span>
+                                <span>К тому же по статистике в среднем из всех складов самообслуживани, те у кого заполняемость ниже 50%, всего 4%</span>
+                            </div>
+                            <div class="pension-block">
+                                <span>Хранения вещей актуально всегда и спрос только растет. Рост заполняемости складов и появления новых складов ежегодно подтверждает тренд</span>
+                            </div>
+                        </div>
+                    </div>
+                </maim>
+                <section class="stable">
+                    <div class="container">
+                        <h2 class="stable-title">Устойчивая сфера даже в кризис</h2>
+                        <div class="stable-block">
+                            <div class="stable-block-item">
+                                <img class="stable-block-item-img" src="assets/img/stable-photo-one.png" alt="photo">
+                                <h5 class="stable-block-item-title">При росте экономики</h5>
+                                <ul class="stable-block-item-list">
+                                    <li class="stable-block-item-list-item">С ростом э-комерции у людей все меньше свободного пространства для хранения всех вещей.</li>
+                                    <li class="stable-block-item-list-item">С ростом бизнеса, компании ищут новые складские помещения для товара и оборудования.</li>
+                                </ul>
+                            </div>
+                            <div class="stable-block-item">
+                                <img class="stable-block-item-img" src="assets/img/stable-photo-two.png" alt="photo">
+                                <h5 class="stable-block-item-title">В случае кризиса</h5>
+                                <div class="stable-block-item-descroption">Люди и компании начинают экономить и переезжают в более маленькие площади(квартиры, офисы). Лишнего места для всех вещей не остается и они в поиске склада для хранения вещей по выгодной цене</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="invest-is">
+                    <div class="container">
+                        <h2 class="invest-is-title">Инвестиции в Boxrent Это:</h2>
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="invest-is-block">
+                                    <div class="invest-is-block-img icon-one"></div>
+                                    <h6 class="invest-is-block-title">Эжемесячные выплаты инвестору</h6>
+                                    <div class="invest-is-block-description">Инвесторы стабильно получают прибыль с аренды каждый месяц до 15 числа</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="invest-is-block">
+                                    <div class="invest-is-block-img icon-two"></div>
+                                    <h6 class="invest-is-block-title">Стабильность</h6>
+                                    <div class="invest-is-block-description">Boxrent управляет активами в размере ≈ 300 000 € в 2 странах Балтии, имеет активную базу арендаторов которая с каждым месяцем увеличивается</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="invest-is-block">
+                                    <div class="invest-is-block-img icon-three"></div>
+                                    <h6 class="invest-is-block-title">Деверсификация</h6>
+                                    <div class="invest-is-block-description">Деверсификация не только между разных локаций и городов, но и между типов клиентов - большие размеры арендуют компании, маленькие используют для личного хранения</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="invest-is-block">
+                                    <div class="invest-is-block-img icon-four"></div>
+                                    <h6 class="invest-is-block-title">Пассивный заработок</h6>
+                                    <div class="invest-is-block-description">Маркетинг, работа с должниками, уход за вашими контейнерами - все бизнес процесы мы полностью берем на себя</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="invest-is-block">
+                                    <div class="invest-is-block-img icon-five"></div>
+                                    <h6 class="invest-is-block-title">Оберегире деньги от инфляции</h6>
+                                    <div class="invest-is-block-description">С процентами которые предлагают банковские депозиты, Вы теряете. Наша компания как и другие с каждым годом увеличивает аренду. За прошлый год в Европе цена на склады увеличилась на 7%</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="invest-is-block">
+                                    <div class="invest-is-block-img icon-six"></div>
+                                    <h6 class="invest-is-block-title">Инвестируйте удалённо</h6>
+                                    <div class="invest-is-block-description">Вы можете придти на чай в любое время по адресу Braslas iela 29a, Riga, LV-1009. Но также можете инвестировать удаленно с любой точки мира</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="invest-is-block">
+                                    <div class="invest-is-block-img icon-seven"></div>
+                                    <h6 class="invest-is-block-title">Низкий порог входа</h6>
+                                    <div class="invest-is-block-description">Возсожность убедиться в бизнес модели с относительно низкой суммой</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <main class="comparison">
+                    <div class="container">
+                        <h2 class="comparison-title">Сравнения со сдачей квартиры</h2>
+                        <div class="comparison-table">
+                            <div class="comparison-table-colomn">
+                                <h6 class="comparison-table-colomn-name">Ликвидный актив</h6>
+                                <h6 class="comparison-table-colomn-name">Порог входа</h6>
+                                <h6 class="comparison-table-colomn-name">Управления</h6>
+                                <h6 class="comparison-table-colomn-name">Ремонты</h6>
+                                <h6 class="comparison-table-colomn-name">Рост стоимости</h6>
+                                <h6 class="comparison-table-colomn-name">Возврат</h6>
+                            </div>
+                            <div class="comparison-table-colomn">
+                                <div class="comparison-table-colomn-flat">
+                                    <h6 class="comparison-table-colomn-flat-title">Сдача квартиры в долгий срок</h6>
+                                    <div class="comparison-table-colomn-flat-description">Да</div>
+                                    <div class="comparison-table-colomn-flat-description">≈ 35 000 €</div>
+                                    <div class="comparison-table-colomn-flat-description">Вы ищете арендаторов, контролируете их оплаты, и тд.</div>
+                                    <div class="comparison-table-colomn-flat-description">Косметический ремонт раз в 5-8 лет. Занимаетесь вы.</div>
+                                    <div class="comparison-table-colomn-flat-description">В среднем 5,3% в год</div>
+                                    <div class="comparison-table-colomn-flat-description">6-9% в год</div>
+                                </div>
+                            </div>
+                            <div class="comparison-table-colomn">
+                                <div class="comparison-table-colomn-invest">
+                                    <h6 class="comparison-table-colomn-invest-title">Инвестиция в контейнер</h6>
+                                    <div class="comparison-table-colomn-invest-description">Да</div>
+                                    <div class="comparison-table-colomn-invest-description">5 000 €</div>
+                                    <div class="comparison-table-colomn-invest-description">Полностью пассивно. Всем занимаемся мы.</div>
+                                    <div class="comparison-table-colomn-invest-description">Подкрасить, заварить - раз в 2-5 лет. Занимаемся мы.</div>
+                                    <div class="comparison-table-colomn-invest-description">В среднем 15% в год</div>
+                                    <div class="comparison-table-colomn-invest-description">15-17% в год</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tel-block">
+                            <div class="tel-block-name">Есть вопросы?</div>
+                            <div class="tel-block-number">+371 253 555 24</div>
+                        </div>
+                    </div>
+                </main>
+
+                <section clas="comparison-ss">
+                    <div class="container">
+                        <h2 class="comparison-ss-title">Сравнения с классическим  центром самообслуживания</h2>
+                        <div class="comparison-ss-kind">Для бизнеса</div>
+                        <div class="comparison-ss-table">
+                            <div class="comparison-ss-table-colomn">
+                                <h6 class="comparison-ss-table-colomn-name">Согласование</h6>
+                                <h6 class="comparison-ss-table-colomn-name">Масштабирование</h6>
+                                <h6 class="comparison-ss-table-colomn-name">Гибкость выбора c наибольшим спросом</h6>
+                                <h6 class="comparison-ss-table-colomn-name">Мобильность</h6>
+                                <!--<h6 class="comparison-ss-table-colomn-name">Удобства</h6>
+                <h6 class="comparison-ss-table-colomn-name">Цены</h6>-->
+                            </div>
+                            <div class="comparison-ss-table-colomn">
+                                <div class="comparison-ss-table-colomn-self-service">
+                                    <h6 class="comparison-ss-table-colomn-self-service-title">Центр складов самообслуживания</h6>
+                                    <div class="comparison-ss-table-colomn-self-service-item">Необходим проект + согласование троительства</div>
+                                    <div class="comparison-ss-table-colomn-self-service-item">
+                                        <div class="comparison-ss-table-colomn-self-service-item-title">Высокий риск</div>
+                                        <div class="comparison-ss-table-colomn-self-service-item-description">Масштабирование происходит только построив новый центр в новой лакации</div>
+                                    </div>
+                                    <div class="comparison-ss-table-colomn-self-service-item">
+                                        <div class="comparison-ss-table-colomn-self-service-item-title">Не эффективно</div>
+                                        <div class="comparison-ss-table-colomn-self-service-item-description">Выбор размеров складов базируется на изследовании рынка</div>
+                                    </div>
+                                    <div class="comparison-ss-table-colomn-self-service-item">
+                                        <div class="comparison-ss-table-colomn-self-service-item-title">Нету</div>
+                                    </div>
+                                    <img class="" src="assets/img/comparison-ss-img-one.png" alt="photo">
+                </div>
+                                </div>
+                                <div class="comparison-ss-table-colomn">
+                                    <div class="comparison-ss-table-colomn-warehouse">
+                                        <h6 class="comparison-ss-table-colomn-warehouse-title">Склады из контейнеров</h6>
+                                        <div class="comparison-ss-table-colomn-warehouse-item">Согласование не нужно. Контейнер считается временной конструкцией</div>
+                                        <div class="comparison-ss-table-colomn-warehouse-item">
+                                            <div class="comparison-ss-table-colomn-warehouse-item-title">Минимум риска</div>
+                                            <div class="comparison-ss-table-colomn-warehouse-item-description">Мы строим склады поэтапно в зависимости от спроса. Платим только за использованную землю.</div>
+                                        </div>
+                                        <div class="comparison-ss-table-colomn-warehouse-item">
+                                            <div class="comparison-ss-table-colomn-warehouse-item-title">Очень гибкие</div>
+                                            <div class="comparison-ss-table-colomn-warehouse-item-description">Поэтапное строительство. После каждого этапа владеем информацией спроса на определенные размеры. Строим под реальный спрос в моменте.</div>
+                                        </div>
+                                        <div class="comparison-ss-table-colomn-warehouse-item">
+                                            <div class="comparison-ss-table-colomn-warehouse-item-title">Мобильны</div>
+                                            <div class="comparison-ss-table-colomn-warehouse-item-description">В случае изменения ситуации на рынке, падения спроса в определенной локации, транспортировка 1 контейнера равна месячной прибыли этого контейнера</div>
+                                        </div>
+                                        <img class="" src="assets/img/comparison-ss-img-two.png" alt="photo">
+                </div>
+                                    </div>
+                                </div>
+                                <div class="comparison-ss-kind">Для клиентов</div>
+                                <div class="comparison-ss-table">
+                                    <div class="comparison-ss-table-colomn">
+                                        <h6 class="comparison-ss-table-colomn-name customer">Удобства</h6>
+                                        <h6 class="comparison-ss-table-colomn-name customer">Цены</h6>
+                                    </div>
+                                    <div class="comparison-ss-table-colomn">
+                                        <div class="comparison-ss-table-colomn-self-service ">
+                                            <div class="comparison-ss-table-colomn-self-service-item customer">От авто до склада нужно нести вещи, от ≈ 20 до 60 метров</div>
+                                            <div class="comparison-ss-table-colomn-self-service-item customer">Дорого <b>9-20€/m2</b></div>
+                                        </div>
+                                    </div>
+                                    <div class="comparison-ss-table-colomn">
+                                        <div class="comparison-ss-table-colomn-warehouse">
+                                            <div class="comparison-ss-table-colomn-warehouse-item customer">Подъезда прямо к складу на грузовой и легковой машине</div>
+                                            <div class="comparison-ss-table-colomn-warehouse-item customer">Выгодно <b>4-13€/m2</b></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                </section>
+                <section class="market">
+                    <div class="container">
+                        <h2 class="market-title">Рост рынка в Европе</h2>
+                        <div class="market-description">Сфера Self Storage в Европе относительно молодая и на данный момент рынок очень активно
+                            развивается. Мы предлагаем Вам присоидиниться к этому быстро растущему рынку.
+                        </div>
+                        <div class="market-block">
+                            <div class="market-block-item">
+                                <div class="market-block-item-img icon-one"></div>
+                                <div class="market-block-item-description">В США каждый 10-ый пользуется складом самообслуживания</div>
+                            </div>
+                            <div class="market-block-item">
+                                <div class="market-block-item-img icon-two"></div>
+                                <div class="market-block-item-description">В Европе только каждый 110-й...</div>
+                            </div>
+                        </div>
+                        <div class="market-percent">+ 81%</div>
+                        <div class="market-info">Столько новых компаний складов самообслуживания построили в Европе за последние <a href="#">4 года*</a></div>
+                        <div class="market-more">*За период 2016-2022. Данные взяты <a href="#">тут</a></div>
+                    </div>
+                </section>
+                <section class="development">
+                    <div class="container">
+                        <h3 class="development-title">Развитие Self Storage в Европе</h3>
+                        <div class="development-info">
+                            <div class="development-info-items">
+                                <div class="development-info-item">Примерное число компаний в сфере Self Storage</div>
+                                <div class="development-info-item">Средняя заполняемость</div>
+                            </div>
+                            <div class="development-info-block">Склады самообслуживания-перспективный рынок</div>
+                        </div>
+                        <div class="graph-and-materials">
+                            <div class="graph">
+                                <table id="q-graph">
+                                    <tbody>
+                                        <tr class="qtr" id="q1">
+                                            <th scope="row">2014</th>
+                                            <td class="sent bar" style="height: 133px;">
+                                                <p>2 400</p>
+                                            </td>
+                                            <td class="item">
+                                                <p>74%</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="qtr" id="q2">
+                                            <th scope="row">2015</th>
+                                            <td class="sent bar" style="height: 142px;">
+                                                <p>2 600</p>
+                                            </td>
+                                            <td class="item" style="margin-bottom: 22px;">
+                                                <p>78%</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="qtr" id="q3">
+                                            <th scope="row">2016</th>
+                                            <td class="sent bar" style="height: 148px;">
+                                                <p>2 700</p>
+                                            </td>
+                                            <td class="item" style="margin-bottom: 35px;">
+                                                <p>80%</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="qtr" id="q4">
+                                            <th scope="row">2017</th>
+                                            <td class="sent bar" style="height: 182px;">
+                                                <p>3 247</p>
+                                            </td>
+                                            <td class="item" style="margin-bottom: 40px;">
+                                                <p>81%</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="qtr" id="q5">
+                                            <th scope="row">2018</th>
+                                            <td class="sent bar" style="height: 210px;">
+                                                <p>3 792</p>
+                                            </td>
+                                            <td class="item" style="margin-bottom: 25px;">
+                                                <p>78%</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="qtr" id="q6">
+                                            <th scope="row">2019</th>
+                                            <td class="sent bar" style="height: 236px;">
+                                                <p>4 290</p>
+                                            </td>
+                                            <td class="item" style="margin-bottom: 29px;">
+                                                <p>79%</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="qtr" id="q7">
+                                            <th scope="row">2020</th>
+                                            <td class="sent bar" style="height: 263px;">
+                                                <p>4 831</p>
+                                            </td>
+                                            <td class="item" style="margin-bottom:32px;">
+                                                <p>79.8%</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="qtr" id="q8">
+                                            <th scope="row">2021</th>
+                                            <td class="sent bar" style="height: 286px;">
+                                                <p>5 173</p>
+                                            </td>
+                                            <td class="item " style="margin-bottom: 40px;">
+                                                <p>81.5%</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div id="ticks">
+                                    <div class="tick" style="height: 55px;">
+                                        <p>10 000</p>
+                                    </div>
+                                    <div class="tick" style="height: 55px;">
+                                        <p>9 000</p>
+                                    </div>
+                                    <div class="tick" style="height: 55px;">
+                                        <p>8 000</p>
+                                    </div>
+                                    <div class="tick" style="height: 55px;">
+                                        <p>7 000</p>
+                                    </div>
+                                    <div class="tick" style="height: 55px;">
+                                        <p>6 000</p>
+                                    </div>
+                                    <div class="tick" style="height: 55px;">
+                                        <p>5 000</p>
+                                    </div>
+                                    <div class="tick" style="height: 55px;">
+                                        <p>4 000</p>
+                                    </div>
+                                    <div class="tick" style="height: 55px;">
+                                        <p>3 000</p>
+                                    </div>
+                                    <div class="tick" style="height: 55px;">
+                                        <p>2 000</p>
+                                    </div>
+                                    <div class="tick" style="height: 55px;">
+                                        <p>1 000</p>
+                                    </div>
+                                </div>
+                                <div id="percents">
+                                    <div class="percent" style="height: 55px;">
+                                        <p>100%</p>
+                                    </div>
+                                    <div class="percent" style="height: 55px;">
+                                        <p>90%</p>
+                                    </div>
+                                    <div class="percent" style="height: 55px;">
+                                        <p>80%</p>
+                                    </div>
+                                    <div class="percent" style="height: 55px;">
+                                        <p>70%</p>
+                                    </div>
+                                    <div class="percent" style="height: 55px;">
+                                        <p>60%</p>
+                                    </div>
+                                    <div class="percent" style="height: 55px;">
+                                        <p>50%</p>
+                                    </div>
+                                    <div class="percent" style="height: 55px;">
+                                        <p>40%</p>
+                                    </div>
+                                    <div class="percent" style="height: 55px;">
+                                        <p>30%</p>
+                                    </div>
+                                    <div class="percent" style="height: 55px;">
+                                        <p>20%</p>
+                                    </div>
+                                    <div class="percent" style="height: 55px;">
+                                        <p>10%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="materials">
+                                <h3 class="materials-title">Материалы</h3>
+                                <div class="materials-item">
+                                    <a download href="assets/pdf/Fedessa отчет Европы 2014.pdf">Fedessa отчет Европы 2014</a>
+                                </div>
+                                <div class="materials-item">
+                                    <a download href="assets/pdf/Fedessa отчет Европы 2015.pdf">Fedessa отчет Европы 2015</a>
+                                </div>
+                                <div class="materials-item">
+                                    <a download href="assets/pdf/Fedessa отчет Европы 2016.pdf">Fedessa отчет Европы 2016</a>
+                                </div>
+                                <div class="materials-item">
+                                    <a download href="assets/pdf/Fedessa отчет Европы 2017.pdf">Fedessa отчет Европы 2017</a>
+                                </div>
+                                <div class="materials-item">
+                                    <a download href="assets/pdf/Fedessa отчет Европы 2018.pdf">Fedessa отчет Европы 2018</a>
+                                </div>
+                                <div class="materials-item">
+                                    <a download href="assets/pdf/Fedessa отчет Европы 2019.pdf">Fedessa отчет Европы 2019</a>
+                                </div>
+                                <div class="materials-item">
+                                    <a download href="assets/pdf/Fedessa отчет Европы 2020.pdf">Fedessa отчет Европы 2020</a>
+                                </div>
+                                <div class="materials-item">
+                                    <a download href="assets/pdf/Fedessa отчет Европы 2021.pdf">Fedessa отчет Европы 2021</a>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="development-title">Средняя заполняемость всех складов</h3>
+                        <div class="development-stock">
+                            <div class="development-stock-data">
+                                <span>0%-49.9%</span>
+                                <span>50%-79.9%</span>
+                                <span>80%-84.9%</span>
+                                <span>85%-89.9%</span>
+                                <span>90%-94.9%</span>
+                                <span>95%-100%</span>
+                            </div>
+                            <div class="development-stock-characteristic">
+                                <div class="development-stock-characteristic-item">4%</div>
+                                <div class="development-stock-characteristic-item">24%</div>
+                                <div class="development-stock-characteristic-item">26%</div>
+                                <div class="development-stock-characteristic-item">28%</div>
+                                <div class="development-stock-characteristic-item">14%</div>
+                                <div class="development-stock-characteristic-item">4%</div>
+                            </div>
+                        </div>
+                        <div class="join-block">
+                            <span>Присоединяйся к быстро</span>
+                            <span> растущему рынку вместе с Boxrent!</span>
+                        </div>
+                    </div>
+                </section>
+                <main class="application">
+                    <div class="container">
+                        <div class="application-block">
+                            <div class="application-block-info">
+                                <h2 class="application-block-info-title">Оставьте заявку</h2>
+                                <div class="application-block-info-description">И мы свяжемся с Вами в ближайшее время</div>
+                            </div>
+                            <form class="application-block-form">
+                                <div class="application-block-form-info">
+                                    <input type="text" id="fname" name="fname" placeholder="Ваше имя">
+                                    <input type="tel" id="phone" name="phone" placeholder="Ваш номер телефона">
+                                    <input type="email" id="email" name="email" placeholder="Ваш e-mail">
+                                </div>
+                                <div class="textarea">
+                                    <textarea placeholder="Комментарии"></textarea>
+                                </div>
+                                <input class="btn btn-primary btn-form" type="submit" value="Отправить заявку">
+                            </form>
+                        </div>
+                    </div>
+                </main>
+                <main class="questions">
+                    <div class="container">
+                        <h2 class="questions-title">Остались вопросы?</h2>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h6 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Вопрос
+                        <span></span>
+                        <span></span>
+                    </button>
+                </h6>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <strong>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев
+                        более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить
+                        навык публичных выступлений в домашних условиях.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h6 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Вопрос
+                        <span></span>
+                        <span></span>
+                    </button>
+                </h6>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <strong>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев
+                        более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить
+                        навык публичных выступлений в домашних условиях.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h6 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Вопрос
+                    <span></span>
+                    <span></span>
+                    </button>
+                </h6>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <strong>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев
+                        более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить
+                        навык публичных выступлений в домашних условиях.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</main>
+<footer id="contscts">
+	<div class="container">
+		<div class="footer-date">
+			<div class="footer-date-contacts">
+				<div class="footer-date-contacts-item">
+					<div class="footer-date-contacts-item-tell">+371 20 440 882</div> 
+					<div class="footer-date-contacts-item-media">
+						<a href="#">
+							<img src="assets/img/footer-icon-youtube.png" alt="youtube">
+						</a>
+						<a href="#">
+							<img src="assets/img/footer-icon-f.png" alt="f">
+						</a>
+						<a href="#">
+							<img src="assets/img/footer-icon-inst.png" alt="inst">
+						</a>
+					</div>				
+				</div>			
+			</div>
+			<div class="footer-date-clients">sales@boxrent.lv
+				<span>(Для клиентов)</span>
+			</div>
+			<div class="footer-date-cooperation">info@boxrent.lv
+				<span>(Сотрудничество)</span>
+			</div>
+			<div class="footer-date-address-one">Braslas iela 20 Krustbaznīcas iela 8a Rankas iela 8</div>
+			<div class="footer-date-address-two">Jūrkalnes iela 6 Airītes iela 9 Slokas iela 130</div>
+		</div>
+		<div class="footer-list">
+			<div class="footer-list-column">
+				<span>Название Пункта 1</span>
+				<span>Название Пункта 2</span>
+				<span>Название Пункта 3</span>
+			</div>
+			<div class="footer-list-column">
+				<span>Название Пункта 4</span>
+				<span>Название Пункта 5</span>
+				<span>Название Пункта 6</span>
+			</div>
+			<div class="footer-list-column">
+				<span>Название Пункта 7</span>
+				<span>Название Пункта 8</span>
+				<span>Название Пункта 9</span>
+			</div>
+			<div class="footer-list-requisites">
+				<h6 class="footer-list-requisites-title">Реквезиты</h6>
+				<div class="footer-list-requisites-row">
+					<div class="footer-list-requisites-row-column">
+						<span>SIA “Boxrent”</span>
+						<span>Reģ.nr.: 42403049027</span>
+						<span>PVN: LV42403049027</span>
+						<span>PJur.adrese: Tallinas iela 77-3, Rīga, LV-1009</span>
+					</div>
+					<div class="footer-list-requisites-row-column">
+						<span>Banka: Swedbank</span>
+						<span>BIC/SWIFT: HABALV22</span>
+						<span>Konts: LV96HABA0551050038843</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-end">Boxrent | 2022 Copyright © Все права защищены <span>© Performed Anna Chekan - 2022</span> </div>
+	</div>
+        
+     
+</footer>
+		<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+		<script defer src="assets/js/popper.min.js"></script>
+		<script defer src="assets/js/bootstrap.min.js"></script>
+		<script defer src="assets/js/slick.min.js"></script>
+    <script async src="assets/js/jquery.fancybox.min.js"></script>
+		<script defer src="assets/js/jquery.nice-select.min.js"></script>
+		<script async src="assets/js/global.js"></script>
+    
+</body>
+</html>
